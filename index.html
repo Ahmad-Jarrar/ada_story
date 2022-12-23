@@ -375,6 +375,9 @@
 
         <div class="section-title">
           <h2>What is common among the Videos?</h2>
+        </div>
+
+        <div class="section">
           <p>In this figure, we plot a graph whose nodes are the brands we consider. The goal of this plot is to show
             the relative number of videos that the brands we consider match as well as the number of videos in which two
             particular brands get mentioned together.To convey this information, we made the size of a node proportional
@@ -394,9 +397,6 @@
             Ok, now exclusively?
           </p>
         </div>
-
-
-
         <!-- <div class="row">
           <div class="col-md-6">
             <div id="smartphone_plot_most_models" class="plotly-graph-div"></div>
@@ -416,6 +416,9 @@
 
         <div class="section-title">
           <h2>WHow many videos are about each brand exclusively?</h2>
+        </div>
+
+        <div class="section">
           <p>This visualization shows the distribution of the number of videos and views of the major smartphone brands
             in terms of market share according to an online <a
               href="https://www.canalys.com/newsroom/canalys-global-smartphone-market-q4-2019">source</a>.
@@ -446,18 +449,14 @@
             divided by the number of models to obtain the average statistics per model. It is worth noting that Apple
             releases only a few models per year, the other brands have a significantly larger number of models compared
             to Apple.
-
-            Apple dominates both charts about views and videos, with a share of over 50% for the number of videos per
-            model and more than two-thirds for the number of views per model.
-            In the overall analysis, Samsung had the largest share of videos made about their models. This may be
-            explained by the fact that they have the highest number of models. However, when we divide by the number of
-            models, Samsung's share of videos and views per model is significantly reduced, as is the case for Oppo and
-            Huawei.
+            <br>
+            Apple dominates both charts about views and videos, with a share of over two-thirds for the number of videos
+            per model and more than 80% for the number of views per model. In the overall analysis, Samsung had the
+            largest share of videos made about their models. This may be explained by the fact that they have the
+            highest number of models. However, when we divide by the number of models, Samsung's share of videos and
+            views per model is significantly reduced, as is the case for Oppo and Huawei.
           </p>
         </div>
-
-
-
 
       </div>
     </section><!-- End Exclusive Videos Section -->
@@ -468,8 +467,9 @@
 
         <div class="section-title">
           <h2>How does the distribution of likes and dislikes vary</h2>
+        </div>
 
-
+        <div class="section">
           <div class="row">
             <div class="col-md-10 mx-auto">
               <div id="avg_like_dislike" class="plotly-graph-div"></div>
@@ -502,20 +502,20 @@
 
         <div class="section-title">
           <h2>How do they differ in terms of words used?</h2>
+        </div>
+        <div class="section">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae elementum erat, ac posuere enim.
             Nulla eu nisl erat. Duis dictum volutpat nisl vel ornare. Nullam dolor odio, auctor at ultrices sed, blandit
             non nibh. Integer eu est massa. Fusce varius placerat convallis. Praesent eget volutpat neque, quis congue
             ante.</p>
+          <div class="row">
+            <div class="col-md-8 mx-auto">
+              <div id="common_adjectives_comparison" class="plotly-graph-div"></div>
+            </div>
+          </div>
         </div>
 
-        <!-- <div class="row">
-              <div class="col-md-6">
-                <div id="smartphone_plot_most_models" class="plotly-graph-div"></div>
-              </div>
-              <div class="col-md-6">
-                <div id="smartphone_plot_analyzed_brands" class="plotly-graph-div"></div>
-              </div>
-            </div> -->
+
 
 
       </div>
@@ -527,6 +527,8 @@
 
         <div class="section-title">
           <h2>How do they differ in sentiment?</h2>
+        </div>
+        <div class="section">
           <p>Although we have observed that Apple stands out from the other brands for this {}, we have obtained
             surprising results in the sentiment analysis so now we are going to do a sentimental analysis on the titles
             and on the descriptions of the videos for each brand. Note that we did not consider the tags in the analysis
@@ -565,18 +567,22 @@
 
         <div class="section-title">
           <h2>Is there a yearly pattern?</h2>
-          <div class="row">
-            <div class="col-md-6">
-              <div id="nbr_views_comparison_all_years_one_brand" class="plotly-graph-div"></div>
-            </div>
-          </div>
+        </div>
+
+        <div class="section">
           <p>In this plot, we show the number of views of videos about a given brands across the year for all years
             between 2008 and 2018. We chose this interval because the years that we excluded contained either few or
             partial data which prevented the corresponding time-series from being meaningful. Note that it is possible
             to navigate between the different brands by pressing the buttons at the top. We chose to show this plot
             because it allows to see well the similarity in term of trend for the number of views across different
             years
-            for a same brand. We observe that most brands do not seem to follow a particular consistent pattern across
+            for a same brand.</p>
+          <div class="row">
+            <div class="col-md-6">
+              <div id="nbr_videos_comparison_all_years_one_brand" class="plotly-graph-div"></div>
+            </div>
+          </div>
+          <p>We observe that most brands do not seem to follow a particular consistent pattern across
             the years. The only one that does is Apple which has a notable peak around September each year starting in
             2013. This is a very interesting observation as it raises the following questions : why in September? and
             why consistently across all years?. To see if there might exists some relationship with the time of the
@@ -587,7 +593,7 @@
 
           <div class="row">
             <div class="col-md-6">
-              <div id="Miguel_all_brands_one_year" class="plotly-graph-div"></div>
+              <div id="nbr_videos_comparison_all_brands_one_year" class="plotly-graph-div"></div>
             </div>
           </div>
           <p>In this plot, we show the relative number of views of videos about the smartphone brands we consider for
@@ -610,7 +616,6 @@
             and
             third position with respect to the number of views. None among them seem to consistently dominate.
           </p>
-
         </div>
 
 
@@ -625,6 +630,9 @@
 
         <div class="section-title">
           <h2>More Detail</h2>
+        </div>
+
+        <div class="section">
           <p>To understand the following plot we need first understand how a time series can be decomposed: generally a
             time series consists of three systematic components: Level, Trend and Seasonality and one non-systematic
             component: the Noise. These components are defined as follows: level representing the average value in the
@@ -633,9 +641,9 @@
             in the series. To represent a time series using these elements we can combine them in two different ways:
           </p>
 
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Additive Model: \(Y(t) = Level + Trend + Seasonality + Noise\)</li>
-            <li class="list-group-item">Multiplicative Model: \(Y(t) = Level * Trend * Seasonality * Noise\)</li>
+          <ul>
+            <li>Additive Model: \(Y(t) = Level + Trend + Seasonality + Noise\)</li>
+            <li>Multiplicative Model: \(Y(t) = Level * Trend * Seasonality * Noise\)</li>
           </ul>
           <p>The additive model is linear where changes over time are consistently made by the same amount. The
             multiplicative model is nonlinear, where changes over time are proportional to the level of the time series.
@@ -648,10 +656,10 @@
 
           <p>So for each brand we consider two different time series: </p>
 
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Phones time series: it is the time series of the
+          <ul>
+            <li>Phones time series: it is the time series of the
               number of phones released by the brand in a given year</li>
-            <li class="list-group-item">Videos time series: it is the time series of the
+            <li>Videos time series: it is the time series of the
               number of videos released about the brand in a given year.</li>
           </ul>
 
@@ -663,11 +671,19 @@
             analysis that has the video's seasonality (i.e. the seasonality of released Apple videos) that mirrors
             almost perfectly the seasonality of phones (i.e the seasonality of released Apple phones). This supports our
             thesis: Apple is the only brand that has a strong relationship between the release of new phones and the
-            release of new videos, meaning that Apple can greatly benefit from Youtube's "free marketing". In other
+            release of new videos, meaning that Apple can greatly benefit from Youtube's "free marketing".
+            In other
             words when an Apple phone is released, it immediately receives a lot of media coverage from youtube videos.
           </p>
-        </div>
 
+          <div class="row">
+            <div class="col-md-6 mx-auto">
+              <div id="dtw_distances" class="plotly-graph-div"></div>
+            </div>
+          </div>
+
+          <p>Text to replace.</p>
+        </div>
 
 
 
