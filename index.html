@@ -570,7 +570,7 @@
         </div>
 
         <div class="section">
-          <p>In this plot, we show the number of views of videos about a given brands across the year for all years
+          <p>In this plot, we show the number of videos about a given brands across the year for all years
             between 2008 and 2018. We chose this interval because the years that we excluded contained either few or
             partial data which prevented the corresponding time-series from being meaningful. Note that it is possible
             to navigate between the different brands by pressing the buttons at the top. We chose to show this plot
@@ -596,25 +596,25 @@
               <div id="nbr_videos_comparison_all_brands_one_year" class="plotly-graph-div"></div>
             </div>
           </div>
-          <p>In this plot, we show the relative number of views of videos about the smartphone brands we consider for
+          <p>In this plot, we show the relative number of videos about the smartphone brands we consider for
             a
             given year. To obtain this plot for a selected year, we divided the time-series of all brands by the
             maximum
-            number of views reached by any of them the corresponding year. We did this in order to ensure that all
+            number of videos reached by any of them the corresponding year. We did this in order to ensure that all
             time
             series take values in the interval [0,1]. This allows for a good comparison of the relative number of
-            views
+            videos
             between brands as well as for a good comparison of the trends of the different brands across a given year.
             Note that the year can be selected using the slider at the bottom or that an animation showing the changes
             across years can be seen by pressing the play button. We observe that Oppo remains at the bottom across
             all
             years. It is followed closely by Huawei. As mentioned earlier, this might have to do with the fact that
-            these brands are chinese and that we only count the views detected in our dataset which is composed of
-            english videos. Consequently we might miss a lot of the views for these brands which probably are on
+            these brands are chinese and that we only count the videos detected in our dataset which is composed of
+            english videos. Consequently we might miss a lot of the videos for these brands which probably are on
             chinese
             videos. We also observe that Xiaomi, Apple and Samsung oscillate in terms of which has the first, second
             and
-            third position with respect to the number of views. None among them seem to consistently dominate.
+            third position with respect to the number of videos. None among them seem to consistently dominate.
           </p>
         </div>
 
@@ -634,8 +634,8 @@
 
         <div class="section">
           <p>To understand the following plot we need first understand how a time series can be decomposed: generally a
-            time series consists of three systematic components: Level, Trend and Seasonality and one non-systematic
-            component: the Noise. These components are defined as follows: level representing the average value in the
+            time series can be seen as consisting of three systematic components: the level, the trend and the seasonality and one non-systematic
+            component: the noise. These components are defined as follows: level representing the average value in the
             series, trend representing the increasing or decreasing value in the series, seasonality representing the
             repeating short-term cycle in the series (e.g. weekly, yearly) and noise representing the random variation
             in the series. To represent a time series using these elements we can combine them in two different ways:
@@ -647,8 +647,7 @@
           </ul>
           <p>The additive model is linear where changes over time are consistently made by the same amount. The
             multiplicative model is nonlinear, where changes over time are proportional to the level of the time series.
-            Since we have some zero values in our data we can't use the multiplicative model, but we will use the
-            additive model.</p>
+            In our case, because of the presence of some zero values in our time series, the additive model is more appropriate.</p>
 
           <div class="row">
             <div id="time_series_seasonality" class="plotly-graph-div"></div>
@@ -667,29 +666,52 @@
             For both of them we used the additive model, and
             we considered only the Seasonality component because we consider it as the most informative one; notice that
             we plot the seasonality only for one year since by definition (as said before) it is periodic (in our case
-            yearly). Now we can analyze the plot: we can see that indeed Apple is the only brand of those in our
-            analysis that has the video's seasonality (i.e. the seasonality of released Apple videos) that mirrors
-            almost perfectly the seasonality of phones (i.e the seasonality of released Apple phones). This supports our
-            thesis: Apple is the only brand that has a strong relationship between the release of new phones and the
-            release of new videos, meaning that Apple can greatly benefit from Youtube's "free marketing".
-            In other
-            words when an Apple phone is released, it immediately receives a lot of media coverage from youtube videos.
+            yearly). An inspection of this plot seems to suggest that the seasonality of Apple’s videos is very close to that of its phone releases 
+              whereas this is not the case for the other brands. In order to quantitatively assess if this is really the case, we 
+              need some measure of distance between two time series. The next plot does just that.
           </p>
-
           <div class="row">
             <div class="col-md-6 mx-auto">
               <div id="dtw_distances" class="plotly-graph-div"></div>
             </div>
           </div>
 
-          <p>Text to replace.</p>
+          <p>Here, we plot the dynamic time warping (DTW), using the euclidian distance, between the seasonality of the phone releases and the seasonality
+              of the number of views for each brand. The DTW euclidian distance is a measure of the distance between two time series. As our 
+              previous visual inspection suggested, Apple is the brand with the smallest distance between the two. In other words, when
+              an Apple phone is released, it immediately receives a lot of attention on youtube. This means that Apple can greatly 
+              benefit, in terms of visibility, from Youtube's "free marketing" which is not the case for the other brands we analyzed.
+</p>
         </div>
 
 
 
       </div>
-    </section><!-- Extra Detail Section -->
+    </section><!-- Conclusion Section -->
+    <!-- ======= Trend in Years Section ======= -->
+    <section id="conclusion" class="about">
+      <div class="container" data-aos="fade-up">
 
+        <div class="section-title">
+          <h2>Conclusion</h2>
+        </div>
+
+        <div class="section">
+          <p>In this plot, we show the number of videos about a given brands across the year for all years
+            between 2008 and 2018. We chose this interval because the years that we excluded contained either few or
+            partial data which prevented the corresponding time-series from being meaningful. Note that it is possible
+            to navigate between the different brands by pressing the buttons at the top. We chose to show this plot
+            because it allows to see well the similarity in term of trend for the number of views across different
+            years
+            for a same brand.</p>
+          
+        </div>
+
+
+
+
+      </div>
+    </section><!-- End conclusion Section -->
 
     <!-- ======= Skills Section ======= -->
     <!-- <section id="skills" class="skills section-bg">
