@@ -365,6 +365,7 @@ h6 {
 section {
   padding: 60px 0;
   overflow: hidden;
+  text-align: justify;
 }
 
 .section-title {
@@ -411,6 +412,11 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;

@@ -68,7 +68,7 @@
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
       <h1>Less is More</h1>
       <p>Is Apple Different from <span class="typed"
-          data-typed-items="Other Smartphone Brands, Samsung, Oppo, Xiaomi, LG"></span></p>
+          data-typed-items="Other Smartphone Brands?, Samsung?, Oppo?, Xiaomi?"></span></p>
       <h5>Team: n<span style="color: #ba342d;">ADA</span></h5>
     </div>
   </section><!-- End Hero -->
@@ -81,15 +81,43 @@
 
         <div class="section-title">
           <h2>Introduction</h2>
-          <p>Youtube is extremely popular in the tech sphere, with reliable tech reviews which have a significant impact
-            on consumer choices. For the purpose of this project we selected some of the top phone companies: Apple,
-            Samsung, LG, Huawei, Xiaomi and Oppo. We would like to analyze how different companies enjoy ‘free
-            marketing’ meaning how Youtube videos cover their smartphone release. More specifically, our focus will be
-            on how Apple, being the largest and most influential of these companies, compares in video content
-            production by YouTubers. Apple is one of the most talked about companies in traditional media despite
-            releasing fewer products than its competitors. We want to find out if there is a systematic trend in
-            coverage and viewership of news related to Apple’s ‘less is more’ product release business strategy..</p>
         </div>
+        <div class="section">
+          <p>YouTube is a popular platform for tech reviews and content that can significantly influence consumer
+            decisions. In this ADA project, we have selected five of the top smartphone companies in terms of market
+            share in recent years: Apple, Samsung, Huawei, Xiaomi, and Oppo. These companies receive "free marketing"
+            through the coverage they receive in YouTube videos, which can include reviews and comparisons of smartphone
+            products, particularly when they release new models.
+
+          </p>
+
+          <p> Apple is the Most Valuable Brand in 2022 and also a highly talked-about company in traditional media and
+            is
+            also the largest and most influential of these smartphone companies. However, Apple releases fewer products
+            compared to its competitors. Let’s investigate whether there is a systematic trend in the coverage and
+            viewership of news related to Apple's "less is more" product release strategy, and how it compares in terms
+            of video content production by YouTubers. </p>
+        </div>
+
+        <div class="row justify-content-center pt-5">
+          <div class="col-md-2">
+            <img class="rounded mx-auto d-block" src="assets/img/logos/apple.png" alt="" style="width: 100%;">
+          </div>
+          <div class="col-md-2">
+            <img class="rounded mx-auto d-block" src="assets/img/logos/samsung.png" alt="" style="width: 100%;">
+          </div>
+          <div class="col-md-2">
+            <img class="rounded mx-auto d-block" src="assets/img/logos/Xiaomi-Logo.png" alt="" style="width: 100%;">
+          </div>
+          <div class="col-md-2">
+            <img class="rounded mx-auto d-block" src="assets/img/logos/oppo.png" alt="" style="width: 100%;">
+          </div>
+          <div class="col-md-2">
+            <img class="rounded mx-auto d-block" src="assets/img/logos/huawei.png" alt="" style="width: 100%;">
+          </div>
+        </div>
+
+
 
       </div>
     </section><!-- End Intro Section -->
@@ -100,17 +128,75 @@
 
         <div class="section-title">
           <h2>Datasets</h2>
-          <p>Youtube is extremely popular in the tech sphere, with reliable tech reviews which have a significant impact
-            on consumer choices. For the purpose of this project we selected some of the top phone companies: Apple,
-            Samsung, LG, Huawei, Xiaomi and Oppo. We would like to analyze how different companies enjoy ‘free
-            marketing’ meaning how Youtube videos cover their smartphone release. More specifically, our focus will be
-            on how Apple, being the largest and most influential of these companies, compares in video content
-            production by YouTubers. Apple is one of the most talked about companies in traditional media despite
-            releasing fewer products than its competitors. We want to find out if there is a systematic trend in
-            coverage and viewership of news related to Apple’s ‘less is more’ product release business strategy..</p>
         </div>
 
-        <!-- <div class="row">
+        <div class="row">
+          <div class="col-lg-9">
+            <div class="section">
+              <p>
+                For this project, we used two data sources : <br>
+              </p>
+              <ul>
+                and 2021 such as their model, release date, announcement date, as well as their detailed hardware
+                <li><b>Youniverse :</b> <a href="https://github.com/epfl-dlab/YouNiverse">This</a> dataset was provided
+                  in the scope of the ADA course. It contains many
+                  different
+                  tables
+                  but the only one we used in the context of the project is the one contained in the
+                  “yt_metadata_en.jsonl.gz” file which contains metadata related to approximately 73M videos from
+                  approximately 137’000 channels. It includes in particular the title, description, tags, category,
+                  number
+                  of likes, number of dislikes and upload date of the videos. This dataset was crawled from Youtube
+                  between
+                  the 20/10/2019 and the 23/11/2019 and contains information about videos that were published between
+                  the
+                  creation of youtube, in 2005, and the time where it was crawled, i.e. 2019. One of the main challenges
+                  with this dataset was its massive size of 13GB. To reduce the data we worked with, we filtered out the
+                  videos that were not in the “Science and Technology” category which gave us a much smaller dataset.
+                </li>
+                <br>
+                <li><b>Phone to Smartphone :</b> This dataset was taken from <a
+                    href="https://github.com/ilyasozkurt/mobilephone-brands-and-models">this</a> GitHub Repo. It
+                  consists of device
+                  specifications crawled from the website <a href="https://www.gsmarena.com/">GSMArena</a>. It contains
+                  data about smartphones released between
+                  1994
+                  and 2021 such as their model, release date, announcement date, as well as their detailed hardware
+                  specifications. In this project, we considered only the models that were released between 2005 and
+                  2019 in
+                  order for our smartphones to cover the same time span as the data contained in the Youniverse dataset.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="section">
+              <div class="rounded mx-auto d-block py-3">
+                <img class="" src="assets/img/logos/youtube.png" alt="" style="width: 100%;">
+              </div>
+
+              <div class="rounded mx-auto d-block py-3">
+                <img class="" src="assets/img/logos/youniverse.png" alt="" style="width: 100%;">
+              </div>
+
+              <div class="rounded mx-auto d-block py-3">
+                <img class="" src="assets/img/logos/gsm2.png" alt="" style="width: 100%;">
+              </div>
+
+              <!-- <div class="rounded mx-auto d-block py-3">
+                <object type="image/svg+xml" data="https://fdn.gsmarena.com/vv/assets12/i/logo.svg"><img
+                    src="https://fdn.gsmarena.com/vv/assets12/i/logo-fallback.gif" alt="GSMArena.com"></object>
+              </div> -->
+
+
+
+
+              <!-- <img class="rounded mx-auto d-block" src="assets/img/logos/youtube.png" alt="" style="width: 100%;"> -->
+            </div>
+
+          </div>
+
+          <!-- <div class="row">
           <div class="col-md-6">
             <div id="smartphone_plot_most_models" class="plotly-graph-div"></div>
           </div>
@@ -120,7 +206,7 @@
         </div> -->
 
 
-      </div>
+        </div>
     </section><!-- End Dataset Section -->
 
     <!-- ======= Dataset Facts Section ======= -->
@@ -187,6 +273,38 @@
       </div>
     </section><!-- End Dataset Facts Section -->
 
+    <!-- ======= Keyword Extraction Section ======= -->
+    <section id="keyword_extraction" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>How did we get search Videos about each brand? </h2>
+        </div>
+
+        <div class="section">
+          <p>In order to go further in the analysis, we needed to be able to detect which videos talk about which brand.
+            To do this, we built a list of keywords associated with each brand and then checked for each video if it
+            contained one of the keywords associated with a given brand in either the title, the description or the
+            tags. If it did, then the brand was added to the list of brands associated with this video. The tricky part
+            was the generation of these keywords : if they are too generic, they will match even unrelated videos and if
+            they are too specific, they will miss a lot of videos.
+          </p>
+
+          <img class="mx-auto d-block py-5" src="assets/img/keywords_matching_diagram.png" alt="" style="width: 70%;">
+
+          <p>The way we did it is that we used the Phone to
+            smartphone dataset to collect all the models released by a brand after 2005. Then we processed these models'
+            names in order to make them simpler because most of the time the full name is not used when talking about a
+            smartphone on the internet. For example a lot of videos will talk about the “new Iphone” and not explicitly
+            the “Iphone XS MAX”. This methodology allowed us to retrieve enough videos for each brand while still making
+            sure that the videos retrieved were relevant.</p>
+
+        </div>
+
+
+
+      </div>
+    </section><!-- Keyword Extraction Section -->
 
     <!-- ======= Smartphones per Brand Section ======= -->
     <section id="smartphones_per_brand" class="about">
@@ -194,24 +312,32 @@
 
         <div class="section-title">
           <h2>How many smartphones do each brand have? </h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae elementum erat, ac posuere enim.
-            Nulla eu nisl erat. Duis dictum volutpat nisl vel ornare. Nullam dolor odio, auctor at ultrices sed, blandit
-            non nibh. Integer eu est massa. Fusce varius placerat convallis. Praesent eget volutpat neque, quis congue
-            ante.</p>
         </div>
 
-        <div class="row">
-          <div class="col-md-6">
-            <div id="smartphone_plot_most_models" class="plotly-graph-div"></div>
+        <div class="section">
+          <p>It is no secret that Some brands (e.g Apple) produce just a handful of models in a year whereas others
+            produce so many different variations of models. So we decided to look at number of models produced by each
+            brand in the timeframe that we were interested in.
+          </p>
+          <div class="row">
+            <div class="col-md-6">
+              <div id="smartphone_plot_most_models" class="plotly-graph-div"></div>
+            </div>
+            <div class="col-md-6">
+              <div id="smartphone_plot_analyzed_brands" class="plotly-graph-div"></div>
+            </div>
           </div>
-          <div class="col-md-6">
-            <div id="smartphone_plot_analyzed_brands" class="plotly-graph-div"></div>
-          </div>
+          <p>These plots showed the huge disparity between number of models produced by different companies. In fact,
+            Apple came 42nd when ranked by the number of models, well below a lot of unknown companies.
+            This distribution meant we had to take into account the number of models when discussing the videos.
+          </p>
+
         </div>
+
 
 
       </div>
-    </section><!-- End Dataset Section -->
+    </section><!-- End Smartphones per Bran Section -->
 
 
     <!-- ======= Videos per Brand Section ======= -->
@@ -220,14 +346,21 @@
 
         <div class="section-title">
           <h2>How many Videos do each brand have?</h2>
+        </div>
 
+        <div class="section">
+          <p>This is a bar chart visualization about the number of videos of the selected smartphone brands.</p>
           <div class="row">
             <div class="col-md-6 mx-auto">
               <div id="videos_barchart" class="plotly-graph-div"></div>
             </div>
           </div>
-          <p>Samsung has the biggest number of videos. Apple has 60k videos even if they release only a handful of
-            phones per year. Maybe it is because they attract a lot of attention when Iphones are released.</p>
+          <p>Samsung has the biggest number of videos, almost reaching 100k videos about their models. This is somehow
+            expected because Samsung has the highest number of models and in each video can only be about one or a few
+            models.
+            One impressive fact is that Apple has 60k videos even if they release only a handful of phones per year,
+            this may be explained by the fact that they attract a lot of attention when Iphones are released
+          </p>
         </div>
 
 
@@ -290,7 +423,7 @@
 
           <div class="row">
             <div class="col-md-6">
-              <div id="views_video" class="plotly-graph-div"></div>
+              <div id="views_video_per_brand" class="plotly-graph-div"></div>
             </div>
           </div>
 
@@ -303,6 +436,24 @@
             terms of share of total views at 7.2%. These pie charts indicate that Apple and Oppo videos are more popular
             among viewers compared to the other brands. In particular, even though Samsung has more videos made about
             their products, a video about an Apple product tends to get more views on average.</p>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div id="views_video_per_model" class="plotly-graph-div"></div>
+            </div>
+          </div>
+          <p>This analysis is similar to the previous one, but in this visualization, the number of videos and views are
+            divided by the number of models to obtain the average statistics per model. It is worth noting that Apple
+            releases only a few models per year, the other brands have a significantly larger number of models compared
+            to Apple.
+
+            Apple dominates both charts about views and videos, with a share of over 50% for the number of videos per
+            model and more than two-thirds for the number of views per model.
+            In the overall analysis, Samsung had the largest share of videos made about their models. This may be
+            explained by the fact that they have the highest number of models. However, when we divide by the number of
+            models, Samsung's share of videos and views per model is significantly reduced, as is the case for Oppo and
+            Huawei.
+          </p>
         </div>
 
 
@@ -317,10 +468,19 @@
 
         <div class="section-title">
           <h2>How does the distribution of likes and dislikes vary</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae elementum erat, ac posuere enim.
-            Nulla eu nisl erat. Duis dictum volutpat nisl vel ornare. Nullam dolor odio, auctor at ultrices sed, blandit
-            non nibh. Integer eu est massa. Fusce varius placerat convallis. Praesent eget volutpat neque, quis congue
-            ante.</p>
+
+
+          <div class="row">
+            <div class="col-md-10 mx-auto">
+              <div id="avg_like_dislike" class="plotly-graph-div"></div>
+            </div>
+          </div>
+          <p>The ratio between likes and dislikes is approximately the same for each brand: the number of likes is
+            approximately equal to ten times the number of dislikes. This is surprising as we were expecting more
+            difference in the proportion between likes and dislikes over these brands.
+            On average, Apple has the biggest number of likes per video with almost 2000 likes per video and Oppo has
+            the lowest with 250 dislike per video even if they have on average almost half of Apple’s number of likes.
+          </p>
         </div>
 
         <!-- <div class="row">

@@ -257,7 +257,7 @@
       duration: 1000,
       easing: 'ease-in-out',
       once: false,
-      mirror: True
+      mirror: true
     })
   });
 
