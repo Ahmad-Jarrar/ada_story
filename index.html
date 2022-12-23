@@ -50,14 +50,37 @@
 
     <nav id="navbar" class="navbar nav-menu">
       <ul>
-        <li><a href="#intro" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Intro</span></a></li>
-        <li><a href="#dataset" class="nav-link scrollto"><i class="bx bx-data"></i>
-            <span>Datasets</span></a></li>
-        <!-- <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a>
+        <li><a href="#intro" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Introduction</span></a>
         </li>
-        <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li> -->
-        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Team</span></a></li>
+        <li><a href="#dataset" class="nav-link scrollto"><i class="bx bx-save"></i>
+            <span>Datasets</span></a></li>
+
+
+        <li><a href="#keyword_extraction" class="nav-link scrollto"><i class="bi bi-search"></i>
+            <span>Search of Brands</span></a></li>
+        <li><a href="#smartphones_per_brand" class="nav-link scrollto"><i class="bx bx-bar-chart"></i>
+            <span>Smartphone Models</span></a>
+        </li>
+        <li><a href="#videos_per_brand" class="nav-link scrollto"><i class="bi bi-pie-chart"></i> <span>Share of
+              Videos</span></a></li>
+        <li><a href="#common_brands_in_videos" class="nav-link scrollto"><i class="bx bx-bookmark"></i>
+            <span>Relationship with Others</span></a></li>
+        <li><a href="#videos_with_one_brand" class="nav-link scrollto"><i class="bx bx-bookmark"></i>
+            <span>Exclusive Videos</span></a></li>
+        <li><a href="#likes_and_dislikes" class="nav-link scrollto"><i class="bx bx-bookmark"></i>
+            <span>Interactions</span></a>
+        </li>
+        <li><a href="#difference_in_words" class="nav-link scrollto"><i class="bx bx-bookmark"></i> <span>Difference in
+              Text</span></a></li>
+        <li><a href="#difference_in_sentiment" class="nav-link scrollto"><i class="bx bx-bookmark"></i> <span>Sentiment
+              Analysis</span></a></li>
+        <li><a href="#yearly_trends" class="nav-link scrollto"><i class="bx bx-bookmark"></i> <span>Yearly
+              Trends</span></a></li>
+        <li><a href="#more_detail" class="nav-link scrollto"><i class="bx bx-bookmark"></i> <span>Deep Dive</span></a>
+        </li>
+        <li><a href="#conclusion" class="nav-link scrollto"><i class="bi bi-journal-check"></i>
+            <span>Conclusion</span></a>
+        </li>
       </ul>
     </nav><!-- .nav-menu -->
 
@@ -97,25 +120,33 @@
             compared to its competitors. Let’s investigate whether there is a systematic trend in the coverage and
             viewership of news related to Apple's "less is more" product release strategy, and how it compares in terms
             of video content production by YouTubers. </p>
+          <div class="row justify-content-center py-5">
+            <div class="col-md-2">
+              <img class="rounded mx-auto d-block" src="assets/img/logos/apple.png" alt="" style="width: 100%;">
+            </div>
+            <div class="col-md-2">
+              <img class="rounded mx-auto d-block" src="assets/img/logos/samsung.png" alt="" style="width: 100%;">
+            </div>
+            <div class="col-md-2">
+              <img class="rounded mx-auto d-block" src="assets/img/logos/Xiaomi-Logo.png" alt="" style="width: 100%;">
+            </div>
+            <div class="col-md-2">
+              <img class="rounded mx-auto d-block" src="assets/img/logos/oppo.png" alt="" style="width: 100%;">
+            </div>
+            <div class="col-md-2">
+              <img class="rounded mx-auto d-block" src="assets/img/logos/huawei.png" alt="" style="width: 100%;">
+            </div>
+          </div>
+          <p class="pt-3">
+            In this datastory we will try to investigate the following question: <b>Is there any systematic difference
+              between
+              Apple and its
+              competitors in terms of amount of coverage, nature of coverage, and timing of the coverage and any
+              correlation its product cycle?</b>
+          </p>
         </div>
 
-        <div class="row justify-content-center pt-5">
-          <div class="col-md-2">
-            <img class="rounded mx-auto d-block" src="assets/img/logos/apple.png" alt="" style="width: 100%;">
-          </div>
-          <div class="col-md-2">
-            <img class="rounded mx-auto d-block" src="assets/img/logos/samsung.png" alt="" style="width: 100%;">
-          </div>
-          <div class="col-md-2">
-            <img class="rounded mx-auto d-block" src="assets/img/logos/Xiaomi-Logo.png" alt="" style="width: 100%;">
-          </div>
-          <div class="col-md-2">
-            <img class="rounded mx-auto d-block" src="assets/img/logos/oppo.png" alt="" style="width: 100%;">
-          </div>
-          <div class="col-md-2">
-            <img class="rounded mx-auto d-block" src="assets/img/logos/huawei.png" alt="" style="width: 100%;">
-          </div>
-        </div>
+
 
 
 
@@ -504,20 +535,25 @@
           <h2>How do they differ in terms of words used?</h2>
         </div>
         <div class="section">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae elementum erat, ac posuere enim.
-            Nulla eu nisl erat. Duis dictum volutpat nisl vel ornare. Nullam dolor odio, auctor at ultrices sed, blandit
-            non nibh. Integer eu est massa. Fusce varius placerat convallis. Praesent eget volutpat neque, quis congue
-            ante.</p>
+          <p>After analyzing various features of smartphone videos, such as the number of views, videos, and
+            likes, we focused on identifying the most frequently used words in these videos. By limiting our
+            analysis to words that are used in at least one video for all of the selected brands, we were able to
+            more accurately identify the most common words and the partition of their frequency among the
+            different brands.</p>
           <div class="row">
             <div class="col-md-8 mx-auto">
               <div id="common_adjectives_comparison" class="plotly-graph-div"></div>
             </div>
           </div>
+          <p>
+            As we can see in this figure, we can show the most frequent filtered words as well as the partition of
+            the frequency of this word among the selected brands.
+            The most frequent word in our analysis was "Pro," which is often used to describe the high-end
+            flagship models of the selected brands
+            The majority of these most frequent adjectives describe positively the main features of the selected
+            brands using adjectives such as: ‘Best’, ‘Quick’, ‘Fast’
+          </p>
         </div>
-
-
-
-
       </div>
     </section><!-- Difference in Words Section -->
 
@@ -634,7 +670,8 @@
 
         <div class="section">
           <p>To understand the following plot we need first understand how a time series can be decomposed: generally a
-            time series can be seen as consisting of three systematic components: the level, the trend and the seasonality and one non-systematic
+            time series can be seen as consisting of three systematic components: the level, the trend and the
+            seasonality and one non-systematic
             component: the noise. These components are defined as follows: level representing the average value in the
             series, trend representing the increasing or decreasing value in the series, seasonality representing the
             repeating short-term cycle in the series (e.g. weekly, yearly) and noise representing the random variation
@@ -647,7 +684,8 @@
           </ul>
           <p>The additive model is linear where changes over time are consistently made by the same amount. The
             multiplicative model is nonlinear, where changes over time are proportional to the level of the time series.
-            In our case, because of the presence of some zero values in our time series, the additive model is more appropriate.</p>
+            In our case, because of the presence of some zero values in our time series, the additive model is more
+            appropriate.</p>
 
           <div class="row">
             <div id="time_series_seasonality" class="plotly-graph-div"></div>
@@ -666,9 +704,11 @@
             For both of them we used the additive model, and
             we considered only the Seasonality component because we consider it as the most informative one; notice that
             we plot the seasonality only for one year since by definition (as said before) it is periodic (in our case
-            yearly). An inspection of this plot seems to suggest that the seasonality of Apple’s videos is very close to that of its phone releases 
-              whereas this is not the case for the other brands. In order to quantitatively assess if this is really the case, we 
-              need some measure of distance between two time series. The next plot does just that.
+            yearly). An inspection of this plot seems to suggest that the seasonality of Apple’s videos is very close to
+            that of its phone releases
+            whereas this is not the case for the other brands. In order to quantitatively assess if this is really the
+            case, we
+            need some measure of distance between two time series. The next plot does just that.
           </p>
           <div class="row">
             <div class="col-md-6 mx-auto">
@@ -676,19 +716,25 @@
             </div>
           </div>
 
-          <p>Here, we plot the dynamic time warping (DTW), using the euclidian distance, between the seasonality of the phone releases and the seasonality
-              of the number of views for each brand. The DTW euclidian distance is a measure of the distance between two time series. As our 
-              previous visual inspection suggested, Apple is the brand with the smallest distance between the two. In other words, when
-              an Apple phone is released, it immediately receives a lot of attention on youtube. This means that Apple can greatly 
-              benefit, in terms of visibility, from Youtube's "free marketing" which is not the case for the other brands we analyzed.
-</p>
+          <p>Here, we plot the dynamic time warping (DTW), using the euclidian distance, between the seasonality of the
+            phone releases and the seasonality
+            of the number of views for each brand. The DTW euclidian distance is a measure of the distance between two
+            time series. As our
+            previous visual inspection suggested, Apple is the brand with the smallest distance between the two. In
+            other words, when
+            an Apple phone is released, it immediately receives a lot of attention on youtube. This means that Apple can
+            greatly
+            benefit, in terms of visibility, from Youtube's "free marketing" which is not the case for the other brands
+            we analyzed.
+          </p>
         </div>
 
 
 
       </div>
-    </section><!-- Conclusion Section -->
-    <!-- ======= Trend in Years Section ======= -->
+    </section><!-- End Extra Detail Section -->
+
+    <!-- Conclusion Section -->
     <section id="conclusion" class="about">
       <div class="container" data-aos="fade-up">
 
@@ -697,19 +743,29 @@
         </div>
 
         <div class="section">
-          <p>In this plot, we show the number of videos about a given brands across the year for all years
-            between 2008 and 2018. We chose this interval because the years that we excluded contained either few or
-            partial data which prevented the corresponding time-series from being meaningful. Note that it is possible
-            to navigate between the different brands by pressing the buttons at the top. We chose to show this plot
-            because it allows to see well the similarity in term of trend for the number of views across different
-            years
-            for a same brand.</p>
-          
+          <p>We have seen in our analysis that Apple is very different from the other smartphone brands considered with
+            respect to almost all metrics. First, it is the brand most often mentioned with other brands, as can be seen
+            in our network plot. This probably shows that it is the brand to which other phones get the most often
+            compared and that it is thus considered as the flagship in the industry. Its “less is more” strategy makes
+            it the brand with the least number of models yet it is at the same time the brand with the most number of
+            videos and the most number of views in our dataset. It is also the brand with the most number of likes per
+            video. All this shows that despite releasing only a few models, Apple still dominates other brands on the
+            youtube platform. Interestingly, it is also the brand with the most pronounced yearly pattern in terms of
+            number of videos and the brand for which the seasonality of phones release and the seasonality of the number
+            of videos made about it is the closest. This shows that Apple’s strategy works and that it is able to enjoy
+            a lot of free publicity from youtube at every new phone’s release.
+            In conclusion, Apple really is different with respect to most metrics and, judging by the numbers, its
+            strategy seems to be working!</p>
+
+          <div class="row">
+            <div class="col-sm-6">
+              <img class="rounded mx-auto d-block" src="assets/img/think_different.jpg" alt="" style="width: 50%;">
+            </div>
+            <div class="col-sm-6">
+              <img class="rounded mx-auto d-block" src="assets/img/steve_jobs.jpg" alt="" style="width: 100%;">
+            </div>
+          </div>
         </div>
-
-
-
-
       </div>
     </section><!-- End conclusion Section -->
 
